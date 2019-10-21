@@ -1,0 +1,7 @@
+.gitattributes text
+.gitignore text
+*.js text
+*.json text
+*.ahk text
+*.md text
+*.bat eol=crlf

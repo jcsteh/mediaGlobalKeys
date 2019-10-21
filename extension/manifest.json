@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Media Global Keys",
+  "version": "2019.1",
+  "description": "Control Apple Music with global shortcut keys",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "mediaGlobalKeys@jantrid.net"
+    }
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://beta.music.apple.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["nativeMessaging"]
+}

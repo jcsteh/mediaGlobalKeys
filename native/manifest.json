@@ -1,0 +1,7 @@
+{
+  "name": "net.jantrid.mediaGlobalKeys",
+  "description": "Sends global shortcut keys for media control to the browser",
+  "path": "mediaGlobalKeysNative.exe",
+  "type": "stdio",
+  "allowed_extensions": [ "mediaGlobalKeys@jantrid.net" ]
+}
