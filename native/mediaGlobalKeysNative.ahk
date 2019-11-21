@@ -1,4 +1,5 @@
 #NoTrayIcon
+#SingleInstance Force
 
 global stdout := FileOpen("*", "w")
 stdout.Encoding := "CP0"
