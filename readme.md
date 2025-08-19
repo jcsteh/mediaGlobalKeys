@@ -1,11 +1,12 @@
 # Media Global Keys
 
 - Author: james Teh &lt;jamie@jantrid.net&gt;
-- Copyright: 2019 James Teh
+- Copyright: 2019-2025 James Teh
 - License: GNU General Public License version 2.0
 
-Media Global keys is a Mozilla Firefox extension which allows you to control Apple Music with global shortcut keys on Windows.
-You can pause/play, skip next/previous, seek forward/backward and adjust volume up/down.
+Media Global keys is a Mozilla Firefox extension which allows you to control Apple Music, Google Meet and Zoom (web) with global shortcut keys on Windows.
+In Apple Music, you can pause/play, skip next/previous, seek forward/backward and adjust volume up/down.
+In Google Meet and Zoom, you can toggle microphone mute.
 
 ## Installation
 Before you install the Firefox extension, you need to build and install the native helper application.

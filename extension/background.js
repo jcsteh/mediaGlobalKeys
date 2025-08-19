@@ -1,12 +1,13 @@
-let contentPort;
+const contentPorts = new Set();
 
 browser.runtime.onConnect.addListener(port => {
-  contentPort = port;
+  contentPorts.add(port);
+  port.onDisconnect.addListener(() => contentPorts.delete(port));
 });
 
-let nativePort = browser.runtime.connectNative("net.jantrid.mediaGlobalKeys");
+const nativePort = browser.runtime.connectNative("net.jantrid.mediaGlobalKeys");
 nativePort.onMessage.addListener(message => {
-  if (contentPort) {
+  for (const contentPort of contentPorts) {
     contentPort.postMessage(message);
   }
 });

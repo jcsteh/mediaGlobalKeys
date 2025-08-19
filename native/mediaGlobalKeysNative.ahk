@@ -60,3 +60,10 @@ sendCommand(command) {
   sendCommand("volumeDown")
   Return
 }
+
+; Win+alt+m: Microphone mute
+#!m::
+{
+  sendCommand("micMute")
+  Return
+}
