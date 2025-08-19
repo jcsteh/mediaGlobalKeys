@@ -6,9 +6,9 @@ stdout.Encoding := "CP0"
 
 sendCommand(command) {
   stdout.WriteUInt(15 + StrLen(command))
-  stdout.Write("{""command"": """)
+  stdout.Write("{`"command`": `"")
   stdout.Write(command)
-  stdout.Write("""}")
+  stdout.Write("`"}")
   stdout.Read(0) ; Flush the write buffer.
 }
 
